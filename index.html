@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex妙回合规页面</title>
+  <meta name="description" content="Codex妙回隐私政策与用户协议入口，支持中文和英文。">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f1eb;
+      --panel: #fffaf6;
+      --ink: #25211d;
+      --muted: #6b5f57;
+      --line: #e6d6c8;
+      --accent: #9d4b2a;
+      --accent-soft: #f5d8c8;
+      --surface: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.72 -apple-system, BlinkMacSystemFont, "HarmonyOS Sans SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 44px;
+    }
+
+    .brand {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .language-switch button {
+      border: 0;
+      border-radius: 6px;
+      padding: 7px 12px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 680px;
+      font-size: 18px;
+    }
+
+    .card {
+      margin-top: 32px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    a.doc-link {
+      display: flex;
+      min-height: 136px;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--surface);
+      color: var(--ink);
+      text-decoration: none;
+      transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    }
+
+    a.doc-link:hover,
+    a.doc-link:focus {
+      border-color: var(--accent);
+      box-shadow: 0 10px 26px rgba(80, 45, 28, .08);
+      outline: 3px solid var(--accent-soft);
+      outline-offset: 2px;
+      transform: translateY(-2px);
+    }
+
+    .doc-title {
+      display: block;
+      color: var(--accent);
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .doc-text {
+      color: var(--muted);
+    }
+
+    .meta {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .meta a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding-top: 24px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 34px;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div class="brand">Codex妙回</div>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <section data-lang="zh">
+      <h1>合规页面</h1>
+      <p class="lead">公开展示 Codex妙回的隐私政策和用户协议，方便应用市场审核、用户查阅和后续更新。</p>
+    </section>
+
+    <section data-lang="en" hidden>
+      <h1>Compliance Pages</h1>
+      <p class="lead">Public access to the Codex Miaohui Privacy Policy and User Agreement for app review, user reference, and future updates.</p>
+    </section>
+
+    <section class="card" aria-label="Compliance documents">
+      <div class="links">
+        <a class="doc-link" href="./privacy-policy.html">
+          <span>
+            <span class="doc-title" data-lang="zh">隐私政策</span>
+            <span class="doc-title" data-lang="en" hidden>Privacy Policy</span>
+          </span>
+          <span class="doc-text" data-lang="zh">了解应用如何处理本地输入、历史、草稿、收藏、资料和偏好设置。</span>
+          <span class="doc-text" data-lang="en" hidden>Learn how the app handles local inputs, history, drafts, favorites, profiles, and preferences.</span>
+        </a>
+        <a class="doc-link" href="./user-agreement.html">
+          <span>
+            <span class="doc-title" data-lang="zh">用户协议</span>
+            <span class="doc-title" data-lang="en" hidden>User Agreement</span>
+          </span>
+          <span class="doc-text" data-lang="zh">查看服务内容、使用限制、本地数据、费用和协议更新说明。</span>
+          <span class="doc-text" data-lang="en" hidden>Review service scope, usage limits, local data, fees, and agreement update terms.</span>
+        </a>
+      </div>
+
+      <p class="meta" data-lang="zh">生效日期：2026年6月2日；联系邮箱：<a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a></p>
+      <p class="meta" data-lang="en" hidden>Effective date: June 2, 2026; Contact: <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a></p>
+    </section>
+  </main>
+
+  <script>
+    const pageMeta = {
+      zh: {
+        htmlLang: "zh-CN",
+        title: "Codex妙回合规页面",
+        description: "Codex妙回隐私政策与用户协议入口，支持中文和英文。"
+      },
+      en: {
+        htmlLang: "en",
+        title: "Codex Miaohui Compliance Pages",
+        description: "Privacy Policy and User Agreement for Codex Miaohui in Chinese and English."
+      }
+    };
+
+    function getInitialLanguage() {
+      const requested = new URLSearchParams(window.location.search).get("lang");
+      const saved = window.localStorage.getItem("codexmiaohui-lang");
+      const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+      return pageMeta[requested] ? requested : pageMeta[saved] ? saved : browserLanguage;
+    }
+
+    function applyLanguage(language) {
+      const meta = pageMeta[language];
+      document.documentElement.lang = meta.htmlLang;
+      document.title = meta.title;
+      document.querySelector('meta[name="description"]').setAttribute("content", meta.description);
+      document.querySelectorAll("[data-lang]").forEach((node) => {
+        node.hidden = node.dataset.lang !== language;
+      });
+      document.querySelectorAll("[data-set-lang]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === language));
+      });
+      window.localStorage.setItem("codexmiaohui-lang", language);
+    }
+
+    document.querySelectorAll("[data-set-lang]").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.setLang));
+    });
+
+    applyLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>

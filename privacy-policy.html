@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex妙回隐私政策</title>
+  <meta name="description" content="Codex妙回隐私政策，说明本地数据、权限、第三方共享和联系方式。">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f1eb;
+      --panel: #fffaf6;
+      --ink: #25211d;
+      --body: #3d3630;
+      --muted: #6b5f57;
+      --line: #e6d6c8;
+      --accent: #9d4b2a;
+      --accent-soft: #f5d8c8;
+      --surface: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "HarmonyOS Sans SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .back-link,
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .back-link {
+      text-decoration: none;
+    }
+
+    .back-link:hover,
+    .back-link:focus,
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .language-switch button {
+      border: 0;
+      border-radius: 6px;
+      padding: 7px 12px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 5vw, 44px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: var(--body);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .meta {
+      color: var(--muted);
+    }
+
+    .card {
+      margin: 24px 0 2px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 700px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <a class="back-link" href="./index.html" data-lang="zh">返回合规首页</a>
+      <a class="back-link" href="./index.html" data-lang="en" hidden>Back to Compliance Home</a>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <article data-lang="zh">
+      <h1>Codex妙回隐私政策</h1>
+      <p class="meta">生效日期：2026年6月2日</p>
+
+      <section class="card">
+        <p>Codex妙回是一款本地表达助手，包名为 com.xmgod.codexmiaohui。我们尊重并保护你的个人信息。本政策说明应用如何处理你在使用过程中主动输入或保存的数据。</p>
+        <p>联系方式：<a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a></p>
+      </section>
+
+      <h2>一、我们处理哪些信息</h2>
+      <p>当前版本不提供账号、登录、云同步或开发者服务器联网服务，不会把你的输入内容上传到开发者服务器。</p>
+      <ul>
+        <li>表达内容：你手动输入的聊天、朋友圈、邮件、正式文本、学习写作等内容，仅用于在设备本地生成结果。</li>
+        <li>本地资料：你手动创建的身份资料、对象资料、常用短语、草稿、历史和收藏，仅保存在本机。</li>
+        <li>偏好设置：协议同意状态、深浅色模式等设置，仅用于应用本地显示和使用体验。</li>
+      </ul>
+
+      <h2>二、权限使用</h2>
+      <p>当前版本不申请通讯录、短信、相册、位置、麦克风、相机、剪贴板读取等系统敏感权限。复制功能只在你点击复制按钮时，将你选择的结果写入系统剪贴板；应用不读取剪贴板内容。</p>
+
+      <h2>三、数据存储与删除</h2>
+      <p>上述数据存储在你的设备本地。你可以在应用内删除历史、收藏、草稿和资料；也可以通过系统设置清除应用数据或卸载应用。清除或卸载后，本地数据可能无法恢复。</p>
+
+      <h2>四、第三方共享</h2>
+      <p>当前版本不接入第三方统计、广告、登录、支付、云同步或在线模型服务，不向第三方共享你的本地输入内容和资料。</p>
+
+      <h2>五、未成年人使用</h2>
+      <p>未成年人使用本应用前，应取得监护人同意并在监护人指导下使用。请勿在应用内输入与使用目的无关的敏感个人信息。</p>
+
+      <h2>六、政策更新</h2>
+      <p>如未来新增联网、账号、云同步、第三方服务或敏感权限，我们会先更新本政策并在应用内提示你阅读和确认。</p>
+    </article>
+
+    <article data-lang="en" hidden>
+      <h1>Codex Miaohui Privacy Policy</h1>
+      <p class="meta">Effective date: June 2, 2026</p>
+
+      <section class="card">
+        <p>Codex Miaohui is a local expression assistant. Its package name is com.xmgod.codexmiaohui. We respect and protect your personal information. This policy explains how the app handles data you actively enter or save while using it.</p>
+        <p>Contact: <a href="mailto:tomkuku588@gmail.com">tomkuku588@gmail.com</a></p>
+      </section>
+
+      <h2>1. Information We Process</h2>
+      <p>The current version does not provide accounts, sign-in, cloud sync, or developer-server network services. Your input is not uploaded to developer servers.</p>
+      <ul>
+        <li>Expression content: chat replies, social posts, emails, formal text, study writing, and similar content you manually enter are used only to generate results locally on your device.</li>
+        <li>Local materials: identity profiles, recipient profiles, common phrases, drafts, history, and favorites you create manually are stored only on your device.</li>
+        <li>Preferences: agreement consent status, light or dark mode, and similar settings are used only for local display and user experience.</li>
+      </ul>
+
+      <h2>2. Permission Use</h2>
+      <p>The current version does not request sensitive system permissions such as contacts, SMS, photo library, location, microphone, camera, or clipboard reading. When you tap the copy button, the app writes the selected result to the system clipboard; it does not read clipboard content.</p>
+
+      <h2>3. Data Storage and Deletion</h2>
+      <p>The data described above is stored locally on your device. You may delete history, favorites, drafts, and profiles in the app. You may also clear app data or uninstall the app through system settings. After clearing data or uninstalling the app, local data may not be recoverable.</p>
+
+      <h2>4. Third-Party Sharing</h2>
+      <p>The current version does not integrate third-party analytics, advertising, sign-in, payments, cloud sync, or online model services. We do not share your local input content or materials with third parties.</p>
+
+      <h2>5. Minors</h2>
+      <p>Minors should obtain consent from a guardian before using this app and should use it under guardian guidance. Please do not enter sensitive personal information that is unrelated to the purpose of using the app.</p>
+
+      <h2>6. Policy Updates</h2>
+      <p>If future versions add networking, accounts, cloud sync, third-party services, or sensitive permissions, we will update this policy first and prompt you in the app to review and confirm it.</p>
+    </article>
+  </main>
+
+  <script>
+    const pageMeta = {
+      zh: {
+        htmlLang: "zh-CN",
+        title: "Codex妙回隐私政策",
+        description: "Codex妙回隐私政策，说明本地数据、权限、第三方共享和联系方式。"
+      },
+      en: {
+        htmlLang: "en",
+        title: "Codex Miaohui Privacy Policy",
+        description: "Privacy Policy for Codex Miaohui, including local data, permissions, third-party sharing, and contact details."
+      }
+    };
+
+    function getInitialLanguage() {
+      const requested = new URLSearchParams(window.location.search).get("lang");
+      const saved = window.localStorage.getItem("codexmiaohui-lang");
+      const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+      return pageMeta[requested] ? requested : pageMeta[saved] ? saved : browserLanguage;
+    }
+
+    function applyLanguage(language) {
+      const meta = pageMeta[language];
+      document.documentElement.lang = meta.htmlLang;
+      document.title = meta.title;
+      document.querySelector('meta[name="description"]').setAttribute("content", meta.description);
+      document.querySelectorAll("[data-lang]").forEach((node) => {
+        node.hidden = node.dataset.lang !== language;
+      });
+      document.querySelectorAll("[data-set-lang]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.setLang === language));
+      });
+      window.localStorage.setItem("codexmiaohui-lang", language);
+    }
+
+    document.querySelectorAll("[data-set-lang]").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.setLang));
+    });
+
+    applyLanguage(getInitialLanguage());
+  </script>
+</body>
+</html>
