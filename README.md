@@ -1,6 +1,6 @@
-# Codex妙回 GitHub Pages 合规页面
+# Code语x笺 GitHub Pages 合规页面
 
-本目录用于托管 Codex妙回对外可访问的合规页面，适合直接部署到 GitHub Pages。
+本目录用于托管 Code语x笺对外可访问的合规页面，适合直接部署到 GitHub Pages。
 
 ## 文件
 
